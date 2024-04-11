@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContainer {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.creditCardCon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 100px; */
+  box-sizing: border-box;
+  height: 80%;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.leftCon {
+  background-color: #3b4b69;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.headText {
   color: white;
+  font-size: 28px;
+  font-weight: 600;
+  border-bottom: 4px solid#ffd773;
 }
 
-.App-link {
-  color: #61dafb;
+.cardCon {
+  background-image: url("https://assets.ccbp.in/frontend/hooks/credit-card-bg.png");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 20px 40px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardValue {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cardName {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.rightCon {
+  background-color: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 40px;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.methodText {
+  color: #475569;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.inputsCon {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+
+.inputsCon input {
+  padding: 10px;
 }
